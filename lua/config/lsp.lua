@@ -21,6 +21,7 @@ vim.diagnostic.config({
         },
     },
 })
+
 -- put early in lsp.lua
 local orig = vim.lsp.util.open_floating_preview
 ---@diagnostic disable-next-line: duplicate-set-field
