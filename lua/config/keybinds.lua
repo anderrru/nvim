@@ -19,4 +19,11 @@ vim.keymap.set("n", "<leader>in", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
 end, { desc = "[in]lay hint" })
 
+-- neotree keybinds
 vim.keymap.set("n", "<leader>ex", ":Neotree left reveal<CR>", { desc = "[ex]plore files" })
+vim.keymap.set("n", "<leader>c", ":Neotree close<CR>", { desc = "[c]lose neotree" })
+
+-- Diagnostic keymaps
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+
+
